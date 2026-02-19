@@ -1,0 +1,18 @@
+@startuml
+
+actor Usuario
+actor Profesor
+actor Administrador
+
+rectangle "Sistema Web Accesible" {
+  Usuario --> (Iniciar Sesión)
+  Usuario --> (Ver Cursos)
+  Usuario --> (Entregar Tareas)
+
+  Profesor --> (Subir Contenido)
+  Profesor --> (Calificar)
+
+  Administrador --> (Gestionar Usuarios)
+}
+
+@enduml
